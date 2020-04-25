@@ -192,7 +192,7 @@ renderCanvas = () => {
             base64Data  +=  base64Data.replace('+', ' ');
             binaryData  =   new Buffer(base64Data, 'base64').toString('binary');
     
-            fs.writeFileSync("images/out.png", binaryData, "binary");
+            fs.writeFileSync(`${process.resourcesPath}/images/out.png`, binaryData, "binary");
         }
     );
     html2canvas($(".explanation-div")[0]).then((canvas) => {
@@ -201,10 +201,10 @@ renderCanvas = () => {
         base64Data  +=  base64Data.replace('+', ' ');
         binaryData  =   new Buffer(base64Data, 'base64').toString('binary');
 
-        fs.writeFileSync("images/explanations.png", binaryData, "binary");
+        fs.writeFileSync(`${process.resourcesPath}/images/explanations.png`, binaryData, "binary");
 
         (async () => {
-            const files = await imagemin(['images/out.png', 'images/explanations.png'], {
+            const files = await imagemin([`${process.resourcesPath}/images/out.png`, `${process.resourcesPath}/images/explanations.png`], {
                 destination: 'images',
                 plugins: [
                     imageminPngquant({
@@ -241,8 +241,8 @@ send_data_to_glitch = () => {
         type: type_codes[currentType],
         subject: $("#subject").val(),
         category: getCategoryId($("#subject").val()),
-        question: base64_encode("images/out.png"),
-        explanations: base64_encode("images/explanations.png"),
+        question: base64_encode(`${process.resourcesPath}/images/out.png`),
+        explanations: base64_encode(`${process.resourcesPath}/images/explanations.png`),
         token: $("#auth_token").val()
     };
 
