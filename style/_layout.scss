@@ -1,0 +1,99 @@
+
+body {
+    font-size: 60%;
+    margin: 0;
+    display: flex;
+    font-family: "Calibri", serif;
+    overflow-y: hidden;
+
+    ::-webkit-scrollbar {
+        height: 2px;
+        width: 2px;
+    }
+       
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+       
+    ::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 1em;
+    }
+}
+
+.left {
+    position: absolute;
+    width: 50%;
+    border-right: 1px solid grey;
+}
+
+.right {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    background-color: lightgrey;
+
+    .question-div {
+        background-color: white;
+        height: fit-content;
+        margin: 5em;
+        width: 70%;
+        margin-left: 7em;
+        margin-right: 7em;
+
+        .answer-images-div {
+            font-family: 'RobotoThin';
+            font-weight: 900;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.6em;
+            overflow-wrap: break-word;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+    
+            div {
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+        }
+    
+        .title-img {
+            font-family: 'RobotoThin';
+            font-weight: 900;
+            width: 100%;
+            overflow-wrap: break-word;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+        }
+    }
+
+    .separator {
+        background-color: grey;
+        height: 1px;
+        width: 80%;
+        margin: 5em;
+    }
+
+    .explanation-div {
+        background-color: white;
+        height: fit-content;
+        margin: 5em;
+        width: 70%;
+        margin-left: 7em;
+        margin-right: 7em;
+
+        .explanation-img {
+            font-family: 'RobotoThin';
+            font-weight: 900;
+            width: 100%;
+            overflow-wrap: break-word;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+        }
+    }
+
+    
+}

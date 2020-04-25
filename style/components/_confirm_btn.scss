@@ -1,0 +1,34 @@
+
+.submit-btn {
+    position: absolute;
+    width: 5em;
+    padding: 0.2em;
+    background-color: whitesmoke;
+    border-radius: 0.3em;
+    border: 1px solid grey;
+    font-size: 1.9em;
+    top: 90%;
+    text-align: center;
+}
+
+.addJson {
+    position: absolute;
+    padding: 0.2em;
+    border: 0.1px solid grey;
+    font-size: 1em;
+    top: 95%;
+    left: 92%;
+    width: 7%;
+    text-align: center;
+}
+
+#auth_token {
+    position: absolute;
+    padding: 0.2em;
+    border: 0.1px solid grey;
+    font-size: 1em;
+    top: 96%;
+    left: 51%;
+    width: 13%;
+    text-align: center;
+}

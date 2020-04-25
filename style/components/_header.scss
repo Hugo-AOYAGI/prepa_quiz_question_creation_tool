@@ -1,0 +1,13 @@
+
+
+.header {
+    font-family: RobotoThin;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .title {
+        border-left: 0.05em solid $light-purple-1;
+        padding-left: 0.75em;
+        font-size: 3.5em;
+    }
+}

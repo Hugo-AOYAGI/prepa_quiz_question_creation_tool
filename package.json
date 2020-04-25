@@ -1,0 +1,21 @@
+{
+  "name": "quiz-app-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Hugo AOYAGI",
+  "license": "ISC",
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.5",
+    "imagemin": "^7.0.1",
+    "imagemin-pngquant": "^8.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "grunt-contrib-imagemin": "^4.0.0"
+  }
+}

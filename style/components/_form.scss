@@ -1,0 +1,208 @@
+
+.main-form {
+    
+    overflow-y: scroll;
+    height: 85vh;
+
+
+    .subject {
+        padding: 1em;
+        border-bottom: 0.1px solid grey;
+
+        label {
+            font-family: RobotoThin;
+            font-size: 1.3em;
+            margin-left: 1em;
+        }
+
+        select {
+            margin-left: 3em;
+            width: 70%;
+            font-size: 1.5em;
+            border-radius: 0.3em;
+            padding: 0.2em;
+        }
+    }
+
+    .category {
+        height: 9%;
+        border-bottom: 0.1px solid grey;
+        display: flex;
+
+        .selected {
+            font-family: RobotoThin;
+            padding: 0.5em;
+            padding-left: 1em;
+            left: 0;
+            // border-right: 0.1px solid grey;
+            width: 25%;
+            font-size: 1.3em;
+            color: grey;
+        }
+
+        .choices {
+            font-family: RobotoBlack;
+            color: $dark-grey-1;
+            left: 25%;
+            width: 75%;
+            font-size: 0.9em;
+            display: -webkit-box;
+            padding-left: 1em;
+            overflow-x: scroll;
+
+            .choice-template {
+                margin: 0.5em;
+                padding: 0.5em;
+                width: 25%;
+                border: 0.5px solid black;
+                border-radius: 1em;
+
+            }
+        }
+    }
+
+    .type {
+        display: flex;
+
+        .type-radio-btn {
+            font-family: RobotoThin;
+            width: 33.3%;
+            height: 3em;
+            border: 0.1px solid grey;
+            font-size: 1.2em;
+            transition: all 0.2s;
+            background-color: lightgray;
+            color: darkgrey;
+
+            &:hover {
+                width: 35%;
+            }
+
+        }
+        
+
+        .isSelected {
+            color: black;
+            background-color: white;
+            
+        }
+
+    }
+
+    .title {
+        
+        .title-lbl {
+            font-size: 1.3em;
+            font-family: RobotoThin;
+            margin: 0.5em;
+            text-align: center;
+            display: flex;
+
+        }
+
+    }
+
+    .explanation {
+        
+        .explanation-lbl {
+            font-size: 1.3em;
+            font-family: RobotoThin;
+            margin: 0.5em;
+            display: flex;
+            text-align: center;
+        }
+
+    }
+
+    #tof {
+        margin: 1em;
+        position: relative;
+        text-transform: uppercase;
+        user-select: none;
+        font-size: 1.2em;
+        font-family: RobotoThin;
+        font-weight: 900;
+        padding: 0.5em;
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: grey 1px 1px 2px;
+        }
+        
+    }
+    #tof-checkbox {
+        display: none;
+    }
+
+
+    #tof-checkbox:checked + #tof:after {
+        content: "Faux";
+        position: absolute;
+        top: 0.5em;
+        left: 0.5em;
+        right: 0;
+        bottom: 0;
+        background: white;
+    }
+    
+    .ans-template {
+
+        .info {
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            font-size: 1.1em;
+            font-weight: 900;
+            font-family: RobotoThin;
+        }
+
+        .ans-lbl {
+            font-size: 1.3em;
+            font-family: RobotoThin;
+            margin: 0.5em;
+            margin-left: 6em;
+            text-align: center;
+
+        }
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+    }
+
+    .add-ans {
+        margin-top: .5em;
+        font-size: 3em;
+        height: 1.25em;
+        line-height: 1.15em;
+        text-align: center;
+        border-radius: 0.5em;
+        color: darken($light-green-1, 50);
+        border: 1px solid $dark-grey-1;
+        width: 1.25em;
+    }
+
+    .buttons {
+        flex: 1;
+        
+        button {
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: RobotoThin;
+            background-color: darkgray;
+            color: white;
+            border: none;
+        }
+    }
+
+    span {
+        flex: 4;
+        text-align: center;
+    }
+
+}

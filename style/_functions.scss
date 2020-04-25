@@ -1,0 +1,200 @@
+
+// Text to upper case
+.upper {
+    text-transform: uppercase;
+}
+
+// No margin
+.no-marg {
+    margin: 0;
+}
+
+// No padding
+.no-padd {
+    padding: 0;
+}
+
+// Absolute position
+.abs {
+    position: absolute;
+}
+
+// Relative position
+.rel {
+    position: relative;
+}
+
+// Transition that lasts for 0.5s
+.transi-03 {
+    transition: all 0.3s;
+}
+
+// Transition that lasts for 0.5s
+.transi-05 {
+    transition: all 0.5s;
+}
+
+// Horizontaly aligned items
+.hz-align-text {
+    text-align: center;
+}
+
+// Horizontaly aligned items in flex display
+.hz-align-flex {
+    display: flex;
+    justify-content: center;
+}
+
+// Horizontaly aligned items with margins
+.hz-align-margins {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Vertically aligned items with margins
+.vt-align-margins {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+// Vertically aligned items with flex display
+.vt-align-flex {
+    display: flex;
+    align-items: center;
+}
+
+// Font size of 5em
+.fs-5 {
+    font-size: 5em;
+}
+
+// Font size of 3em
+.fs-3 {
+    font-size: 3em;
+}
+
+// Font size of 2em
+.fs-2 {
+    font-size: 2em;
+}
+
+// Font size of 2.5em
+.fs-25 {
+    font-size: 2.5em;
+}
+
+// Font size of 1.75em
+.fs-175 {
+    font-size: 1.75em;
+}
+
+// No overflow
+.of-hidden {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.of-x-hidden {
+    overflow-x: hidden;
+}
+
+.of-y-hidden {
+    overflow-y: hidden;
+}
+
+// Width fit content
+.w-fit {
+    width: fit-content;
+}
+
+// Height fit content
+.h-fit {
+    width: fit-content;
+}
+
+// Cursor pointer
+.pointer {
+    cursor: pointer;
+}
+
+//Font weight: 100
+.fw-1 {
+    font-weight: 100;
+}
+
+//Font weight: 500
+.fw-5 {
+    font-weight: 500;
+}
+
+//Font weight: 900
+.fw-9{
+    font-weight: 900;
+}
+
+//Width 100%
+.w-100 {
+    width: 100%;
+}
+
+//Height 100%
+.h-100 {
+    height: 100%;
+}
+
+//Z-index functions
+.z-5 {
+    z-index: 5;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-15 {
+    z-index: 15;
+}
+
+// Backcol of red for test purposes
+.red {
+    background-color: red;
+}
+
+// Right of 0
+.right-0 {
+    right: 0;
+}
+
+// Left of 0
+.left-0 {
+    left: 0;
+}
+
+// Border-Radius of 50%
+.br-50 {
+    border-radius: 50%;
+}
+
+// White space pre
+.ws-pre {
+    white-space: pre;
+}
+
+// White space no wrap
+.ws-no-wrap {
+    white-space: nowrap;
+}
+
+// Opacity of 0.5
+.opacity-05 {
+    opacity: 0.5;
+}
+
+// Prevents user text selection
+.no-select {
+    user-select: none;
+}
