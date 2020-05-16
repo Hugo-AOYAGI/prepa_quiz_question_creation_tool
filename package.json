@@ -7,11 +7,10 @@
     "postinstall": "install-app-deps",
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder build"
   },
   "build": {
     "appId": "yourappid",
-    "category": "your.app.category.type",
     "asar": true,
     "asarUnpack": [
       "configuration/**/*",
@@ -39,9 +38,13 @@
         "deb"
       ]
     },
+    "directories": {
+      "buildResources": "build_assets",
+      "output": "release"
+    },
     "win": {
       "target": "NSIS",
-      "icon": "build/icon.ico"
+      "icon": "build_assets/icon.ico"
     }
   },
   "author": "Hugo AOYAGI",

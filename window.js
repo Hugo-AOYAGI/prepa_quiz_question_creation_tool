@@ -3,6 +3,7 @@ const fs = require("fs");
 const html2canvas = require("html2canvas");
 const imagemin = require('imagemin');
 const remote = require('electron').remote;
+const clipboard = require('electron').clipboard;
 
 const imageminPngquant = require('imagemin-pngquant');
 
@@ -14,6 +15,9 @@ let selected_category = "";
 let currentType = "Vrai ou Faux";
 let ans_nb = 0;
 let add_ans = `<div class="add-ans hz-align-margins pointer">+</div>`;
+
+let cb_img_len = 0;
+
 
 MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -27,6 +31,7 @@ MathJax.Hub.Config({
   });
 
 $(document).ready(() => {
+
 
     // Read initial json
     var xmlHttp = new XMLHttpRequest();
@@ -50,6 +55,10 @@ $(document).ready(() => {
     $(".type").click(selectQuestionType);
     $("#title-area").on("input", updateTitlePreview);
     $("#explanation-area").on("input", updateExplanationPreview);
+    
+    $("#title-area").on("paste", titlePasteHandle);
+
+    $("#explanation-area").on("paste", ansPasteHandle);
 
     // Add event listener to post a new json file to server
     $(".addJson").click((event) => {
@@ -71,6 +80,24 @@ $(document).ready(() => {
     });
 
 });
+
+titlePasteHandle = () => {
+    console.log("paste")
+    let img = clipboard.readImage();
+    if (!img.isEmpty()) {
+        $("#title-area").val($("#title-area").val() + "<img src='" + img.toDataURL() + "'>");
+        // $("#title-area").on("paste", titlePasteHandle);
+    }
+}
+
+ansPasteHandle = () => {
+    console.log("paste")
+    let img = clipboard.readImage();
+    if (!img.isEmpty()) {
+        $("#explanation-area").val($("#explanation-area").val() + '<img src="' + img.toDataURL() + '">');
+        // $("#explanation-area").on("paste", ansPasteHandle);
+    }
+}
 
 // Add the options to the subject select
 addOptions = () => {

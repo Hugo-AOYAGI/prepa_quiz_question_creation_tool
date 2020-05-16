@@ -9,7 +9,7 @@ body {
 }
 
 body ::-webkit-scrollbar {
-  height: 2px;
+  height: 4px;
   width: 2px;
 }
 
@@ -518,6 +518,7 @@ body ::-webkit-scrollbar-thumb {
 .main-form textarea {
   width: 100%;
   resize: none;
+  white-space: nowrap;
 }
 
 .main-form .add-ans {
